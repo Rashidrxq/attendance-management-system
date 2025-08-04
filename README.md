@@ -98,6 +98,17 @@ cd attendance-system
 ### 3. Start the Server
 Visit `http://localhost/atm/index.html` in your browser.
 
+
+##4. Registration
+type the details in form and submit 
+
+#### 4. login users 
+role student 
+userId = st1
+password= 456
+etc...
+
+
 ---
 
 ## 🌐 Hosting Instructions
