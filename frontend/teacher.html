@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Student Dashboard</h1>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </header>
+
+    <section class="student-details">
+  <h2>Welcome</h2>
+  <p><strong>Name:</strong> <span id="studentName"></span></p>
+  <p><strong>ID:</strong> <span id="studentId"></span></p>
+  <p><strong>Class:</strong> <span id="studentClass"></span></p>
+  <p><strong>Email:</strong> <span id="email"></span></p>
+  <p><strong>Address:</strong> <span id="address"></span></p>
+</section>
+    <section class="attendance-section">
+      <h3>Mark Attendance</h3>
+      <button id="markBtn" onclick="markAttendance()">Mark Today's Attendance</button>
+      <p id="markMsg" class="status-msg"></p>
+    </section>
+
+    <section class="history-section">
+      <h3>Attendance History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceHistory">
+          <!-- Filled by JavaScript -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

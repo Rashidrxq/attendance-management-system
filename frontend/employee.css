@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  /* 🔁 Responsive Background Image */
+  background-image: url("emp.png"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Dashboard Container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.95); /* slightly transparent for depth */
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+
+  /* 🔁 Make it responsive */
+  box-sizing: border-box;
+  backdrop-filter: blur(4px); /* Optional: slight blur behind dashboard */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.student-details, .attendance-section, .history-section {
+  margin-top: 20px;
+}
+
+button#markBtn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.status-msg {
+  margin-top: 10px;
+  color: #006400;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+thead {
+  background-color: #f2f2f2;
+}

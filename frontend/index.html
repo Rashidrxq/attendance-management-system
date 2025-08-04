@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AMS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="top-bar">
+    <div class="logo">
+        <img src="logo.png" alt="logo" class="logo">
+    </div>
+     <a href="dashboard.html">
+  <button type="button" class="role admin-btn">Admin</button>
+</a>
+
+  </header>
+
+  <main class="container">
+    <div class="left">
+      <h1>ATTENDANCE <br><span>SYSTEM</span></h1>
+      <p>"This Attendance Management System helps users mark and view their daily attendance easily. It's simple, fast, and made for everyone...</p>
+    </div>
+
+    <div class="right">
+      <form class="login-form" action="backend/api/login.php" method="POST">
+  <div class="role-select">
+    <button type="button" class="role active">Teacher</button>
+    <button type="button" class="role">employee</button>
+    <button type="button" class="role">Student</button>
+  </div>
+
+  <!-- Hidden input for selected role -->
+  <input type="hidden" name="role" id="selectedRole" value="Teacher">
+
+  <label>Username</label>
+  <input type="text" name="username" placeholder="Enter your userID" required>
+
+  <label>Password</label>
+  <input type="password" name="password" placeholder="Enter your password" required>
+
+  <div class="remember">
+    <input type="checkbox" id="remember">
+    <label for="remember">Remember me</label>
+  </div>
+<button type="submit" class="btn">login</button>
+ 
+ <div class="extras">
+     <a href="forgot">Forgot password?</a>
+ </div>
+ 
+
+  <div class="register">
+    Don't have an account? <a href="register.html">Register here</a>
+  </div>
+</form>
+
+      <h3>rshidxxmhd</h3>
+
+    </div>
+  </main>
+  
+<script src="script.js"></script>
+</body>
+</html>

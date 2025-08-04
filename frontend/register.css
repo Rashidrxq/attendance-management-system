@@ -1,0 +1,118 @@
+/* Full-screen layout */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("student.png");
+  font-family: Arial, sans-serif;
+}
+.logo img {
+  width: 80px;   /* Adjust as needed */
+  height: auto;  /* Maintains aspect ratio */
+}
+
+/* Left section */
+.left {
+  flex: 1;
+  padding: 60px 40px;
+  background-color: #f0f4ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Left title style */
+.left h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.left span {
+  color: #246bfd;
+}
+
+/* Right section with center alignment */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("background-image.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+}
+
+/* Register form box */
+.register-form {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.register-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.roles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.role {
+  flex: 1;
+  margin-right: 8px;
+  padding: 8px;
+  border: 1px solid #246bfd;
+  color: #246bfd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.role:last-child {
+  margin-right: 0;
+}
+
+.role.active {
+  background: #246bfd;
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #246bfd;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1c50c1;
+}
+
+.extras {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.extras a {
+  color: #246bfd;
+  text-decoration: none;
+}
